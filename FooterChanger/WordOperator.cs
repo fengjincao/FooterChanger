@@ -38,7 +38,10 @@ namespace FooterChanger
                 {
                     foreach (var txt in textBoxItem.Descendants<Text>())
                     {
-
+                        if (txt.Text.Contains("Animbus"))
+                        {
+                            txt.Text = txt.Text;
+                        }
                     }
                 }
                 return "heading";
